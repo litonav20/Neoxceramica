@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoxCeramica</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!----NavigationBar--->
+    <div id="nav-bar">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="./Images/Logo Neox.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="D:\Escritorio\Pagina Neoxceramica/index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="D:\Escritorio\Pagina Neoxceramica/Catalogo.html">CATALOGO/PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!---SLIDER---->
+    <div id="slider">
+        <div id="headerSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#headerSlider" data-slide-to="1"></li>
+                <li data-target="#headerSlider" data-slide-to="2"></li>
+                <li data-target="#headerSlider" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href=""><img src="Images/Imagenes carusel 2/Cervino ambiente.PNG" class="d-block w-100"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="Images/Imagenes carusel 2/Blanco 30x60 ambiente 5351618.PNG"
+                            class="d-block w-100"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="Images/Imagenes carusel 2/Coleur ambiente.PNG" class="d-block w-100"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="Images/Imagenes carusel 2/Espiga ambiente.PNG" class="d-block w-100"></a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!--Catalogo-->
+    <div id="catalogoIndex">
+        <div class="container">
+            <div id="row">
+                <h2 class="centrar" id="accedeCatalogo">
+                    Accede a Catalogo
+                </h2>
+                <p class="centrar" id="parafo">
+                    Conoce nuestros productos
+                </p>
+                <div class="centrarBoton">
+                    <a class="uk-button uk-button-primary uk-button-large" href="">Acceder</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Galeria-->
+    <!-- <div class="row" id="Seccion-galeria"> -->
+    <div class="container-galeria">
+        <div class="item-1">
+            <div class="item-2">
+                <ul>
+                    <li>
+                        <h2 style="font-weight: bold;">Sobre la empresa</h2>
+                        <br>
+                        <br>
+                        <p class="about-content">Neox ceramica es una empresa dedicada a la importacíon
+                            de
+                            revestimientos de suelos desde España
+                            <br> con gran variedad de productos para suplir diversas necesidades de
+                            formatos.</p>
+                        <br>
+                        <a class="uk-button uk-button-primary uk-button-large" href="">Cotactanos</a>
+                    </li>
+                </ul>
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var location = {
+                            lat: -33.386690,
+                            lng: -70.692620
+                        };
+                        var map = new google.maps.Map(document.getElementById("map"), {
+                            zoom: 4,
+                            center: location
+                        });
+                        var marker = new google.maps.Marker({
+                            position: location,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASttvMRTPiUnCKuC9GXDHEbtf87mbIFRM&callback=initMap">
+                    </script>
+            </div>
+            <div class="item-3">
+                <ul>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Araya Antic.png" alt=""></a>
+                    </li>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Atenas pulido ambiente 5313821.png"
+                                alt=""></a>
+                    </li>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Avila ambiente.png" alt=""></a>
+                    </li>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Blanco 30x60 ambiente 5351618.png"
+                                alt=""></a>
+                    </li>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Luxor ambiente.png" alt=""></a>
+                    </li>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Madera ambiente.png" alt=""></a>
+                    </li>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Madera decape ambiente 5313945.png"
+                                alt=""></a>
+                    </li>
+                    <li class="grow">
+                        <a href=""><img src="Images/Imagenes galeria index 2/Marqueteria_Caoba.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div id="footerIndex">
+            <div>
+                <ul class="linksFooter">
+                    <li>
+                        <a href="" class="footerPoliticas">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="" class="footerPoliticas">Catalogo</a>
+                    </li>
+                    <li>
+                        <a href="" class="footerPoliticas">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="" class="footerPoliticas">Politicas de privacidad</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="logoBlanco">
+                <img src="./Images/Logo Neox blanco.png" alt="">
+            </div>
+            <div class="container">
+                <p class="footerText">Copyright © 2020 Neox Cerámica Todos los derechos reservados. Camino lo ruiz 5310,
+                    bodega
+                    C (Santiago)
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- </div> -->
+
+
+</body>
+
+</html>
